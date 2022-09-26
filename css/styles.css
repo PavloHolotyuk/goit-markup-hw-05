@@ -298,6 +298,7 @@ letter-spacing: 0.02em;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid red;
 }
 
 .portfolio-header {
@@ -446,12 +447,6 @@ margin-bottom: 4px;
    text-align: center;
 }
 
-.con-ourteam {
-    top: 1540px;
-    padding top: 0;
-
-}
-
 
 .ourteam-main {
     padding-top: 30px;
@@ -528,7 +523,7 @@ url(../images/hero.svg);
 }
 .our-team-link {
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     width: 100%;
     height: 100%;
@@ -568,4 +563,37 @@ color: var(--primary-bg-color);
 .social-media-link:focus,
 .social-media-link:hover {
     color: #2196F3;
+}
+
+.our-partnes {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.our-partnes-list {
+    gap: 30px;
+    display: flex;
+}
+.our-partnes-class {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.our-partnes-item {
+    width: 170px;
+    height: 92px;
+    
+    
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.footer-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-mainn {
+    display: flex;
+    margin-left: 70px;
 }
