@@ -54,6 +54,9 @@ button {
 
  
 /* Ховер */
+
+
+
 .logo {
     color: var(--primary-text-color);
     font-family: Raleway, cursive;
@@ -65,6 +68,21 @@ button {
     padding-top: 24px;
     padding-bottom: 25px;
 }
+.footer-logo {
+    padding: 0;
+    color: var(--primary-text-color);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+}
+
+.footer-logo-main {
+    color: var(--primary-text-navigation)
+}
+
 .logo .logo-first {
     color: var(--primary-text-navigation);
 }
@@ -484,12 +502,7 @@ margin-bottom: 4px;
     
 }
 
-.futures .item:nth-child(3)::before {
-    background-image: url(../images/Vector\ \(2\).svg)
-}
-.futures .item:nth-child(4)::before {
-    background-image: url(../images/vector\(3\).svg);
-}
+
 
 .hero-images {
     background-repeat: no-repeat;
@@ -547,23 +560,28 @@ border-radius: 0px 0px 4px 4px;
 .our-team-link:hover,
 .our-team-link:focus {
     color: #F5F4FA;
-    background-color: #2196F3;
+    background-color: var(--primary-text-navigation)
+}
+.footer-second {
+    margin-left: 70px;
+      
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+
 }
 
 .footer-media {
-margin-right: 156px;
 font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-cursor: pointer;
-color: var(--primary-bg-color);
+line-height: 1.14;
+  text-transform: uppercase;
+ color: var(--primary-bg-color)
+
 }
 
-.adress {
-    display: flex;
-}
+
 .social-media-list {
     margin-top: 20px;
     gap: 10px;
@@ -571,18 +589,16 @@ color: var(--primary-bg-color);
 }
 
 .social-media-contact-image {
+    fill: currentColor;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    color: var(--color-light-grey);
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
+    
 }
-.social-media-link:focus,
-.social-media-link:hover {
-    color: #2196F3;
-}
+
 
 .our-partnes {
     padding-bottom: 94px;
@@ -639,4 +655,18 @@ color: var(--primary-bg-color);
 
 .site-header-contact-image {
     fill: currentColor;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-contact-image {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF
+}
+.social-media-contact-image:focus,
+.social-media-contact-image:hover {
+    background-color: #2196F3;
 }
