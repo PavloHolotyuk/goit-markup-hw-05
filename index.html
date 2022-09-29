@@ -47,8 +47,7 @@
           <section class="hero hero-images">
                         <div class="container ">
                             <h1 class="hero-title "> Ефективні рішення для вашого бізнесу</h1>
-                        <button type="button" class="button primary">Замовити послугу</button>
-                        </div>
+                        <button  type="button"  class="button primary" data-modal-open>Замовити послугу</button>                   
                     </section>
                 
                        <section class="section">
@@ -104,13 +103,25 @@
                     <h2 class="section-title ">Чим ми займаємося</h2>
                 <ul class="item-class">
                     <li class="item images">
-                        <img src="./images/img.jpg" alt="Чимз займаємось 1" width="370">
+                        <div class="images-item">
+                            <img  src="./images/img.jpg" alt="Чимз займаємось 1" width="370">
+                            <p class="images-link">Десктопні додатки</p>   
+                        </div>
+                                    
                     </li>
                     <li class="item images">
-                        <img src="./images/img(1).jpg" alt="Чим займаємось 2" width="370">
+                        <div class="images-item">
+                            <img src="./images/img(1).jpg" alt="Чим займаємось 2" width="370">
+                            <p class="images-link">Мобільні додатки</p>
+                        </div>
+                        
                     </li>
                     <li class="item images">
-                        <img src="./images/img(2).jpg" alt="Чим займаємось 3" width="370">
+                        <div class="images-item">
+                            <img src="./images/img(2).jpg" alt="Чим займаємось 3" width="370">
+                            <p class="images-link">Дизайнерські рішення</p>
+                        </div>
+                        
                     </li>               
                 </ul>
                 </div>
@@ -374,5 +385,16 @@
            </div>
   
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal" >
+           <div class="footer-baton">
+            <button class="modal-btn" data-modal-close>x</button>
+           </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+   
+   
 </body>
 </html>
