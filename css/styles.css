@@ -70,7 +70,7 @@ button {
 }
 .footer-logo {
     padding: 0;
-    color: var(--primary-text-color);
+    color: var(--primary-bg-color);
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
@@ -102,8 +102,20 @@ button {
 }
 
 .portfolio-link {
+    display: block;
+    
+}
+
+.portfolio-item:focus,
+.portfolio-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -254,9 +266,9 @@ letter-spacing: 0.03em;
  {
 background-color:var(--primary-text-navigation);
 color: var(--primary-bg-color);
-text-align: center;
-letter-spacing: 0.03em;
-border: 1px solid transparent;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+
 }
 
 
@@ -332,7 +344,7 @@ letter-spacing: 0.02em;
 }
 .page-header {
     display: inline-block;
-    background-color: var(--primary-bg-color);
+    border-bottom: 1px solid #ECECEC;;
 }
 
 
@@ -369,7 +381,7 @@ letter-spacing: 0.02em;
   }
     
 .team {
-    background-color: var();
+    background-color: var(--primary-bg-button);
 }
 
 
@@ -484,11 +496,11 @@ margin-bottom: 4px;
     color: var(--portfolio-color);
     text-decoration: none;
     display: block;
-    border: 1px solid transparent;
     line-height: 1.62;
-
+    border: none;
     border-radius: 4px;
     padding: 6px 22px;
+    letter-spacing: 0.03em;
     
 }
 
@@ -657,11 +669,6 @@ line-height: 1.14;
     flex-wrap: wrap;
 }
 
-.footer {
-    margin-top: 20px;
-}
-
-
 .our-partnes-item {
     width: 100%;
     height: 100%;
@@ -675,7 +682,6 @@ line-height: 1.14;
 
 .social-media-item {
     gap: 10px;
-    margin-top: 16px;
     display: flex;
     justify-content: center;
 
