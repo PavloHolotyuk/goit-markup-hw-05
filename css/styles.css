@@ -806,4 +806,28 @@ color: var(--primary-bg-color);
 background: rgba(47, 48, 58, 0.8);
 
 }
+.section-item-link {
+    position: relative;
+    padding-bottom: 28px;
 
+}
+
+.section-item-link:hover::after,
+.section-item-link:focus::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #2196F3;
+  border-radius: 2px;
+
+}
+
+.icon-modal {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
